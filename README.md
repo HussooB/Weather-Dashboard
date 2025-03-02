@@ -1,12 +1,43 @@
-# React + Vite
+# 🌦️ Weather Dashboard  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Project Overview  
+This **Weather Dashboard** is a multi-functional weather app built with **React & Vite**. It allows users to search for weather information, get real-time updates based on their **current location**, and switch between **Celsius & Fahrenheit**.  
 
-Currently, two official plugins are available:
+## 🎯 Features  
+✅ **City Search** – Enter a city to get weather updates.  
+✅ **Current Location Weather** – Automatically fetches weather using your device's location.  
+✅ **Temperature Unit Toggle** – Switch between **Celsius & Fahrenheit**.  
+✅ **Hourly Forecast** – View weather conditions for the next 24 hours.  
+✅ **Daily Forecast** – Get a **7-day** weather prediction.  
+✅ **Clean & Responsive UI** – Optimized for both desktop & mobile.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️ Tech Stack  
+- **React (useState, useEffect)** – For UI and state management.  
+- **Vite** – Fast & efficient development setup.  
+- **OpenWeatherMap API** – Fetches real-time weather data.  
+- **Geolocation API** – Retrieves user’s location for weather updates.  
+- **CSS (or Tailwind if used)** – For styling and responsiveness.  
 
-## Expanding the ESLint configuration
+## 🛠️ Challenges & Learning Experience  
+Building this project was a great learning experience. Some of the key challenges I faced:  
+- Understanding **React hooks (useState & useEffect)** to manage API calls dynamically.  
+- Handling **asynchronous requests** efficiently.  
+- Implementing **geolocation** for real-time weather updates.  
+- Creating a seamless UI with **responsive design**.  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Despite the challenges, I wanted to make my project unique by adding a **detailed forecast (both daily & hourly)** and giving users multiple options for **temperature units**.  
+
+## 📸 Screenshots  
+*(You can add screenshots here if needed)*  
+
+## 🔗 Live Demo  
+**[Check it out on Netlify/Vercel](#)** (Add your deployment link here)  
+
+## 📂 Installation & Setup  
+To run the project locally:  
+
+```sh
+git clone your-repo-link
+cd weather-dashboard
+npm install
+npm run dev
