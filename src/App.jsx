@@ -27,14 +27,14 @@ function App() {
       <TopPart setQuery={setQuery}/>
       <Input setUnits={setUnits} setQuery={setQuery} />
 
-      {weather && (
+      {weather ? (
         <>
           <TimeAndLocation weather={weather} />
           <TempAndDetails weather={weather} units={units} />
           <Forcast title="3 hour step forecast" data={weather.hourly} />
           <Forcast title="daily forecast " data={weather.daily}/>
         </>
-      )}
+      ):(<h1 className='text-3xl text-center text-red-700'>Please connect to the internet!</h1>)}
     </div>
   );
 }
