@@ -25,7 +25,7 @@ const TopPart = ({setQuery}) => {
   return (
     <div className='flex justify-around flex-wrap items-center my-6'>
      { cities.map(city => (
-        <button className='cursor-pointer hover:bg-cyan-300 m-2 p-3 rounded' key={city.id} onClick={()=>setQuery({q:city.name})} >{city.name}</button>
+        <button className='cursor-pointer underline hover:bg-cyan-300 m-2 p-3 rounded' key={city.id} onClick={()=>setQuery({q:city.name})} >{city.name}</button>
       ))}
     </div>
   )
