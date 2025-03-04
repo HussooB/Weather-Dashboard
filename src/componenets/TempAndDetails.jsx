@@ -56,16 +56,16 @@ const TempAndDetails = ({weather:{details, icon, temp,temp_min,temp_max,sunrise,
   ]
   return (
     <div>
-    <div className="flex  items-center justify-center py-6 text-xl text-cyan-300">
+    <div className="flex flex-wrap  items-center justify-center py-6 text-xl text-cyan-300">
       <p>{details}</p>
     </div>
-    <div className="flex text-white flex-row justify-between items-center py-3">
+    <div className="flex flex-wrap text-white flex-row justify-between items-center py-3">
     <img src="http://openweathermap.org/img/wn/01d@2x.png"  alt="Weather Icon" className="w-20" />
     <p className="text-5xl ">{`${temp.toFixed()}°`}</p>
-    <div className="flex flex-col space-y-3 items-start">
+    <div className="flex flex-col flex-wrap space-y-3 items-start">
       {
         verticalDetails.map(detail => (
-          <div key={detail.id} className="flex items-center">
+          <div key={detail.id} className="flex flex-wrap items-center">
             <detail.Icon size={20} className="mr-2"/>
             <p>{detail.title} : <span className="ml-1">{detail.value}</span></p>
           </div>
@@ -73,7 +73,7 @@ const TempAndDetails = ({weather:{details, icon, temp,temp_min,temp_max,sunrise,
       }
     </div>
     </div>
-    <div className="flex text-white flex-row justify-between items-center py-3 space-x-10 text-sm">
+    <div className="flex text-white flex-wrap flex-row justify-between items-center py-3 space-x-10 text-sm">
       {
         horizontalDetails.map(({id, Icon, title, value}) => (
           <div key={id} className="flex flex-row items-center">

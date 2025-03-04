@@ -12,8 +12,9 @@ const Input = ({setUnits,setQuery}) => {
     })
   }   
   return (
-    <div className="flex flex-row justify-center my-6">
-      <div className="flex flex-row justify-center items-center bg-white space-x-4 p-2 rounded-lg  w-3/4">
+    <div className="flex flex-row justify-center flex-wrap my-6">
+      
+      <div className="flex justify-center items-center mr-5 bg-white space-x-4 p-2 rounded-lg  w-[70%]">
         <input type="text" placeholder="type your city" value={city}  onChange={(e)=>{setCity(e.currentTarget.value)}} className="bg-white text-xl p-2 w-full  capitalize 
         focus:outline-none placeholder:lowercase"/>
       <BiSearch size={30} onClick={()=>handleSearchClick()} className="cursor-pointer transition ease-out hover:scale-129 "/>
